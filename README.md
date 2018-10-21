@@ -4,23 +4,23 @@ Web based game that teaches kids to code. This project is our solution to the JP
 ## Getting Started
 
 There are two ways to access this project.
-1.) You can open the top-level index.html file in a browser to view the web site locally. You will still need an internet connection since Trinket is web based.
-2.) Open the website at https://stroshinator.github.io/dungeoncode
+* You can open the top-level index.html file in a browser to view the web site locally. You will still need an internet connection since Trinket is web based.
+* Open the website at https://stroshinator.github.io/dungeoncode
 
 ### Prerequisites
 
-1.) Updated web browser
-2.) Internet Connection
-3.) Code editor
-4.) Java IDE in case you want to edit the Java source code for the game
+* Updated web browser
+* Internet Connection
+* Code editor
+* Java IDE in case you want to edit the Java source code for the game
 
 
 ## Running the game
 
-1.) Go to https://stroshinator.github.io/dungeoncode which is the homepage
-2.) Select level you want to start at, we suggest level 1
-3.) Follow the instructions to the right and in the shell, we suggest to play this game competitively with two people
-4.) After completing a level, click the "Go to next level" button, or click "Home" button and select the next level
+* Go to https://stroshinator.github.io/dungeoncode which is the homepage
+* Select level you want to start at, we suggest level 1
+* Follow the instructions to the right and in the shell, we suggest to play this game competitively with two people
+* After completing a level, click the "Go to next level" button, or click "Home" button and select the next level
 
 
 ## Built With
