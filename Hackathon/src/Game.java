@@ -79,9 +79,10 @@ public class Game
       
       Scanner questionScanner = new Scanner( new File("Questions.txt"));
       String question = questionScanner.nextLine();
+      int noOfQuestions = 0;
       if(question.contains("Questions"))
       {
-      	int noOfQuestions = Integer.parseInt(question.substring(question.indexOf("Questions")+10));//, question.indexOf("//")).trim());
+      	 noOfQuestions = Integer.parseInt(question.substring(question.indexOf("Questions")+10, question.indexOf("//")).trim());
       	int q = 0;
     	while( q<noOfQuestions)
     	{
@@ -97,31 +98,61 @@ public class Game
       {
     	  //for( int i = 0; i < characters.size(); i++)
     	  int i = 0;
-    	  while( i < characters.size())
+    	  while( i < characters.size() )
     	  {
     		  String input;
     		  System.out.println("\nThis question will be for Player " + characters.elementAt(i).getID() );
-    		  //double randNum = (Math.random()* 20);
-    		  //System.out.println( (int)randNum + "\n");
-    		  Questions.getQuestionById(1).askQuestion();
+    		  double randNum = (Math.random()* 4 + 1);
+    		  System.out.println( (int)randNum + "\n");
+    		  boolean QuestionAskedChecker = false;
+    		  QuestionAskedChecker = Questions.getQuestionById( (int)randNum ).getAsked();
+    		  while( QuestionAskedChecker == true)
+    		  {
+    			  //randNum = (Math.random()* 4 + 1);
+    			  randNum = (int)Math.random()*4 +1;
+        		  System.out.println( (int)randNum + "\n");
+        		  QuestionAskedChecker = Questions.getQuestionById( (int)randNum ).getAsked();
+        		 
+    		  }//
+    		  Questions.getQuestionById( (int)randNum).askQuestion();
     		  input = scan.next();
-    		  if( input.equalsIgnoreCase( Questions.getQuestionById(1).getAnswer() ) )
+    		  if( input.equalsIgnoreCase( Questions.getQuestionById( (int)randNum ).getAnswer() ) )
     		  {
     			  System.out.println("Correct answer");
+    			  characters.elementAt(i).updateScore(20);
+    			  
     		  }
     		  else
     		  {
     			  System.out.println("Wrong answer");
     		  }
     		  System.out.println("Teaching explanation");
-    		  System.out.println( Questions.getQuestionById(1).getExplanation() );
+    		  System.out.println( Questions.getQuestionById( (int)randNum ).getExplanation() );
+    		  Questions.getQuestionById( (int)randNum).changedQuestionAsked();
+    		  
+    		  if( (i+1) >=noOfQuestions  )
+    		  {
+    			  System.out.println( " Questions are done " );
+    			  gameStillGoing = false;
+    			  break;
+    		  }
     		  i++;
     	  }
     	  gameStillGoing = false;
       }
       //Now to iterate through the different players and code
       
-      
+      int winnerId = 0;
+      int maxScore = 0;
+      for(int w = 0; w<characters.size(); w++)
+      {
+    	  if( maxScore < characters.elementAt(w).getScore())
+    	  {
+    		  winnerId = w;
+    	  }
+    	  
+      }
+      System.out.println("The winner of this game is Player " + (winnerId + 1) + " : " + characters.elementAt(winnerId).getName() );
       System.out.println("\n");
       scan.close();
       questionScanner.close();

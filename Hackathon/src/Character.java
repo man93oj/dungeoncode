@@ -54,6 +54,10 @@ public class Character
     //System.out.println(Place.getPlaceById(currentPlaceID).getName() );
   }
   
+  public int updateScore( int update)
+  {
+	  return score+update;
+  }
 //  public void staticPrint()
 //  {	  
 //	  
