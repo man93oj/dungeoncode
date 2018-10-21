@@ -98,6 +98,15 @@ public class Questions {
 		return teachingDescription;
 	}//get the  explanation for the question
 	
+	public void changedQuestionAsked()
+	{
+		asked = true;
+	}
+	
+	public boolean getAsked()
+	{
+		return asked;
+	}
 //	public void getExplanation()
 //	{
 //		System.out.println(teachingDescription);
@@ -115,4 +124,8 @@ public class Questions {
 		System.out.println("Please select the correct answer");
 	}
 	
+	public int totalNumOfQuestions()
+	{
+		return Questions.questions.size();
+	}
 }//end of Questions class

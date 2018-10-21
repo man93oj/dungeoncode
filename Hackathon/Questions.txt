@@ -1,4 +1,4 @@
-Questions 1
+Questions 4      //Level 1 Code
 
 1
 int var = (10/5)*3; What value will 'var' store?
@@ -10,4 +10,32 @@ A
 1
 Based on order of operations the answer will be and since 'var' is an int variable, there it will be just 6 and not 6.0. (6.0 is a double data type)
 
+2
+What is the difference between an int and double
+A. Int and double data types can store the same type of values
+B. Int stores integers and double stores decimal and integer values
+C. Int and double are not primitive data types
+D. What is an Int
+B
+1
+Int variables are integers and thus are all numbers greater or less than 0. Whereas the double data type also includes all decimal values.
 
+3
+int var = (10/2)*3; What value will 'var' store?
+A. 15
+B. 10/15
+C. 6.0
+D. (6)
+A
+1
+Based on order of operations the answer will be and since 'var' is an int variable, there it will be just 15 and not 15.0 (6.0 is a double data type)
+
+4
+What is the difference between a String and char
+A. String and char data types can store the same type of values
+B. String stores strings of words and char stores decimal and integer values
+C. String and Char are not primitive data types
+D. String stores strings of words and char stores individual characters
+D
+1
+String variables are sentences or words. Whereas the char data type are made to store individual characters
