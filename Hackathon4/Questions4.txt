@@ -1,0 +1,71 @@
+Questions 4 //
+
+
+1
+1
+The four principles of object-oriented programming are:
+A. encapsulation, abstraction, inheritance, and polymorphism.
+B. encapsulation, inheritance, polymorphism and coding
+C. inheritance, polymorphism, coding, building
+D. non-encapsulation, non-inheritance, non-abstraction, and non-polymorphism
+A
+1
+Actual Answer is A. The four principles of object-oriented programming are encapsulation, abstraction, inheritance, and polymorphism.
+
+2
+5
+   _____ <class_name>{  
+    field;  
+    method;  
+  }  
+What entity can go inside that blank?
+A. Class
+B. Object
+C. c++
+D. java
+A
+1
+Actual Answer is A. A class is an entity that determines how an object will behave and what the object will contain.
+
+3
+1
+How an object of a class can be created programmatically?
+A. Classname ReferenceVariable = new objectName();
+B. ClassName ReferenceVariable = new ClassName();
+C. Classname ReferenceVariable = new ReferenceVariable();
+D. Human object = new child();
+B
+1
+Actual Answer is B. An object can be created using "new" keyword followed by the class name.
+
+4
+22
+// Class Declaration
+class Dog {
+    // Instance Variables
+    String breed;
+    String color;
+
+  
+    // method 1
+    public String getInfo() {
+        return ("Breed is: "+breed+" and color is: "+color);
+    }
+}
+
+public class Execute{
+    public static void main(String[] args) {
+        Dog maltese = new Dog();
+        maltese.breed="Maltese";
+        maltese.color="white";
+        System.out.println(maltese.getInfo());
+    }
+}
+Expected output:
+A. Breed is: "+breed+" and color is: "+color"
+B. Breed is: Maltese and color is: white
+C. Breed is: "+Maltese+" and color is: "+white+"
+D. Breed is:  and color is: 
+B
+1
+Actual Answer is B. Breed and color will be changed to respective object initialised values.
