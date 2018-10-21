@@ -1,0 +1,13 @@
+Questions 1
+
+1
+int var = (10/5)*3; What value will 'var' store?
+A. 6
+B. 10/15
+C. 6.0
+D. (6)
+A
+1
+Based on order of operations the answer will be and since 'var' is an int variable, there it will be just 6 and not 6.0. (6.0 is a double data type)
+
+
